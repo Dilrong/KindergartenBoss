@@ -30,8 +30,6 @@ const ListScreen = ({navigation}) => {
     const Profile = () => (
         <View style={styles.profile}>
           <Image style={styles.profile_img} source={require('_assets/icon.png')}/>
-          <Title>식품대장</Title>
-          <Subheading style={styles.profile_name}>불량식품은 이제 그만!</Subheading>
         </View>
       )
 
@@ -58,13 +56,13 @@ const ListScreen = ({navigation}) => {
             <FlatList data={DATA} renderItem={renderItem} keyExtractor={item => item.id}/>
             <Button icon="share-variant" mode="outlined" style={styles.shareButton} color="#000" onPress={() => { 
                 Share.share({
-                    title: '식품대장 - 불량 식품은 이제 그만!',
+                    title: '유치원 대장 - 유치원 정보를 여기서!',
                     message: 'https://play.google.com/store/apps/details?id=com.dilrong.foodboss'
                 })
-            }}>식품대장 공유하기</Button>
+            }}>유치원 대장 공유하기</Button>
             <Button icon="star" mode="outlined" style={styles.shareButton} color="#000" onPress={() => {
                 Linking.openURL('https://play.google.com/store/apps/details?id=com.dilrong.foodboss')
-            }}>식품대장 칭찬하기</Button>
+            }}>유치원 대장 칭찬하기</Button>
         </SafeAreaView>
     )
 }
