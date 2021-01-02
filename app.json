@@ -1,0 +1,12 @@
+{
+  "name": "KindergartenBoss",
+  "displayName": "KindergartenBoss",
+  "expo": {
+    "name": "KindergartenBoss",
+    "slug": "KindergartenBoss",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}
